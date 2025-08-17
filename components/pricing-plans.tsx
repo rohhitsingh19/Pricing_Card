@@ -47,14 +47,14 @@ export default function PricingPlans() {
               className={`rounded-2xl shadow-lg p-6 md:p-8 flex flex-col hover:shadow-2xl transition-shadow duration-300`}
             >
              <div className="bg-white rounded-2xl flex flex-col justify-between h-full shadow-lg overflow-hidden">
-  {/* Header Section */}
+  
   <div className={`px-6 py-8 rounded-t-2xl flex flex-col ${
     plan.highlight 
       ? "bg-gradient-to-br from-indigo-300 via-white to-blue-300 border-b border-indigo-100" 
       : "bg-gradient-to-br from-gray-500 to-gray-100 border-b border-gray-200"
     }`}>
     
-    {/* Plan Badge */}
+   
     <span className={`text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full self-start mb-4 ${
       plan.highlight
         ? "bg-indigo-100 text-indigo-700 border border-indigo-200"
@@ -63,14 +63,14 @@ export default function PricingPlans() {
       {plan.name}
     </span>
     
-    {/* Price */}
+   
     <h3 className="text-4xl font-bold text-gray-900 mb-2">{plan.price}</h3>
     
-    {/* Subtitle */}
+  
     <p className={`text-sm leading-relaxed ${plan.highlight? "text-gray-700" : "text-shadow-indigo-50"} `}>{plan.subtitle}</p>
   </div>
 
-  {/* Features List */}
+
   <div className="px-6 py-6 flex-grow">
     <ul className="space-y-3">
       {plan.features.map((feature, index) => (
@@ -82,7 +82,7 @@ export default function PricingPlans() {
     </ul>
   </div>
 
-  {/* CTA Button */}
+ 
   <div className="px-6 pb-6">
     <button className={`w-full font-semibold rounded-xl py-3 px-6 transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
     plan.highlight 
